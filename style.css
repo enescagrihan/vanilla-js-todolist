@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F4D03F;
+    background-image: linear-gradient( 110.9deg,  rgba(44,221,239,1) 1.1%, rgba(14,191,210,1) 37.6%, rgba(8,127,140,1) 99.2% );
+    min-height: 100vh;
+}
+
+header,
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+header h1 {
+    color: #fff;
+}
+
+form {
+    margin-bottom: 45px;
+}
+
+.filter {
+    margin: .5rem;
+    position: relative;
+}
+
+.filter select {
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 32px;
+    width: 110px;
+    padding: 5px;
+    color: rgba(8,127,140,1);
+
+}
+.filter::after {
+    font-family: 'Font Awesome\ 5 Pro';
+    content: '\f107';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    pointer-events: none;
+    color: rgba(8,127,140,1);
+}
+
+.todo-input {
+    width: 240px;
+    height: 33px;
+    border: 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.add-btn,
+.complete-btn,
+.edit-btn,
+.delete-btn {
+    width: 33px;
+    height: 33px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.complete-btn i,
+.edit-btn i,
+.delete-btn i,
+.todo input {
+    pointer-events : none;
+}
+
+.add-btn {
+    background-color: #fff;
+    color: rgba(8,127,140,1);
+    font-size: 1.1rem;
+}
+.add-btn:hover {
+    background-color: rgba(8,127,140,1);
+    color: #fff;
+}
+.complete-btn {
+    background-color: rgb(25, 187, 20);
+}
+.edit-btn {
+    background-color: #FDC830;
+}
+.delete-btn {
+    background-color: #F37335;
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    margin-bottom: 25px;
+}
+
+.completed {
+    opacity: 0.5;
+}
